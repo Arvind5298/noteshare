@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful - StudyNotes</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+  <div class="max-w-md w-full bg-white shadow-lg rounded-lg p-8">
+    <div class="text-center">
+      <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
+        <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <h2 class="mt-4 text-xl font-bold text-gray-900">Payment Successful!</h2>
+      <p class="mt-2 text-gray-600">
+        Thank you for your payment. Your lifetime access to StudyNotes has been activated.
+      </p>
+      <div class="mt-6">
+        <a href="/" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+          Return to Dashboard
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Redirect to dashboard after 3 seconds
+    setTimeout(() => {
+      window.location.href = '/dashboard';
+    }, 3000);
+  </script>
+</body>
+</html>
